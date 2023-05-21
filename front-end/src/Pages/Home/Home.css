@@ -15,18 +15,20 @@
    transform: translate(-50%, -50%);
 }
 
-  button {
+ .button button {
     font-size: 50px;
     background-color: #A8B9B6;
     color: #E1CBD6;
-    font-family: "Dancing Script", cursive;
+    font-family: "Alex Brush", cursive;
     border: none;
     border-radius: 10%;
+    padding: 0px 15px;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 1);
 }
 
 button:hover {
     background-color: #E1CBD6;
     color: #A8B9B6;
-    transform: scale(1.25);
+    transform: scale(1.15);
     cursor: pointer;
 }
