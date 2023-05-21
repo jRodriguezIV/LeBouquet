@@ -8,7 +8,8 @@ CREATE TABLE games (
     scientific_name TEXT,
     cost DECIMAL NOT NULL,
     color TEXT,
-    description VARCHAR,
-    size TEXT,
+    watering TEXT,
+    sunlight TEXT,
+    image TEXT
     is_favorite BOOLEAN DEFAULT FALSE
 );
