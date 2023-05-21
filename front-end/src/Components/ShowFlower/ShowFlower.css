@@ -1,0 +1,49 @@
+.showFlowerContainer {
+    text-align: center;
+
+}
+
+.flowerImage {
+    margin-top: 2.5%;
+    display: inline-block;
+    border-radius: 5%;
+    max-width: 50%;
+}
+
+.flowerInfo{
+    font-family: Andale Mono, monospace;
+    background-color: #BBD1E1;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2.5%;
+    padding: .5%;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.spanRight {
+    padding-left: 2.5%;
+}
+
+.editButton {
+    background-color: #8daabe;
+    border-width: 1px;
+    border-color: #8daabe;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+.editButton:hover {
+    background-color: #E3F2FD;
+}
+
+@media screen and (max-width:1000px) {
+    .flowerImage {
+        width: 75%;
+        max-width: 75%;
+    }
+
+    .flowerInfo { 
+        margin-left: 20%;
+    margin-right: 20%;
+    }
+}
