@@ -16,7 +16,7 @@ export default function Index() {
 
   return (
     <div>
-      <CarouselComp flowerList={flowerList}/>
+      <CarouselComp flowerList={flowerList} />
     </div>
   );
 }
