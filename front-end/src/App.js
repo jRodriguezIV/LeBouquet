@@ -1,19 +1,19 @@
-import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './Pages/Home/Home';
-import NavBar from './Components/NavBar/NavBar';
-import Error from './Pages/Error/Error';
-
-const API = process.env.REACT_APP_API
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import NavBar from "./Components/NavBar/NavBar";
+import Error from "./Pages/Error/Error";
+import Index from "./Pages/Index/Index";
 
 function App() {
   return (
     <div>
       <Router>
-        {window.location.pathname !== '/' && <NavBar />}
+        <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="*" element={<Error />}/>
+          <Route path="/flowers" element={<Index />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </Router>
     </div>
