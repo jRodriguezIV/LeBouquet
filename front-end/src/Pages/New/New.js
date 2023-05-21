@@ -1,8 +1,12 @@
+import FlowerNewform from "../../Components/FlowerNewForm/FlowerNewForm";
+
+
 export default function New() {
+
 
     return (
         <div>
-            This is the new page!
+            <FlowerNewform/>
         </div>
     )
 }

@@ -29,7 +29,7 @@ export default function CarouselComp({ flowerList }) {
             <span style={{ color: flower.color }}>{flower.name}</span>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`Cost: $${flower.cost}`}
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Tap&nbsp;For&nbsp;Info
+            Tap&nbsp;For&nbsp;Info {flower.is_favorite && "⭐️"}
           </p>
         </div>
       ))}

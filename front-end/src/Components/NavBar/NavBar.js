@@ -10,7 +10,7 @@ export default function NavBar() {
       <div className="navBar">
         <div className="navBarText">
             <p className="icon" onClick={() => navigate("/") }> <strong>Le Bouquet 🌸</strong></p>
-            <p className="new" onClick={() => navigate(`/new`)} >New Flower</p>
+            <p className="new" onClick={() => navigate(`/flowers/new`)} >New Flower</p>
         </div>
       </div>
     );
