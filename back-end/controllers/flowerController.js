@@ -1,6 +1,11 @@
 const express = require("express");
-const { getAllFlowers, getFlower, createFlower, deleteFlower } = require("../queries/flowers");
-const { checkName, checkBoolean } = require("../validations/checkFlowers")
+const {
+  getAllFlowers,
+  getFlower,
+  createFlower,
+  deleteFlower,
+} = require("../queries/flowers");
+const { checkName, checkBoolean } = require("../validations/checkFlowers");
 const flowers = express.Router();
 
 flowers.get("/", async (req, res) => {
@@ -22,7 +27,7 @@ flowers.get("/:id", async (req, res) => {
   }
 });
 
-flowers.post("/", checkName, checkBoolean,async (req, res) => {
+flowers.post("/", checkName, checkBoolean, async (req, res) => {
   try {
     const flower = await createFlower(req.body);
     res.status(200).json(flower);
@@ -31,14 +36,14 @@ flowers.post("/", checkName, checkBoolean,async (req, res) => {
   }
 });
 
-flowers.delete("/", async (req,res) => {
-    const { id } = req.params;
-    const deletedFlower = await deleteFlower(id);
-    if (deletedFlower.id) {
-        res.status(200).json(deletedFlower)
-    } else {
-        res.status(404).send("Flower not found")
-    }
-})
+flowers.delete("/:id", async (req, res) => {
+  const { id } = req.params;
+  const deletedFlower = await deleteFlower(id);
+  if (deletedFlower.id) {
+    res.status(200).json(deletedFlower);
+  } else {
+    res.status(404).send("Flower not found");
+  }
+});
 
 module.exports = flowers;
