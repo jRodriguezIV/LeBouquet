@@ -1,5 +1,6 @@
 const express = require("express");
 const { getAllFlowers, getFlower, createFlower, deleteFlower } = require("../queries/flowers");
+const { checkName, checkBoolean } = require("../validations/checkFlowers")
 const flowers = express.Router();
 
 flowers.get("/", async (req, res) => {
@@ -21,7 +22,7 @@ flowers.get("/:id", async (req, res) => {
   }
 });
 
-flowers.post("/", async (req, res) => {
+flowers.post("/", checkName, checkBoolean,async (req, res) => {
   try {
     const flower = await createFlower(req.body);
     res.status(200).json(flower);
