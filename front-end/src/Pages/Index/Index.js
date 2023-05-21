@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Carousel from "../../Components/NavBar/Carousel/Carousel";
+import CarouselComp from "../../Components/NavBar/Carousel/CarouselComp";
 import axios from "axios";
 
 const API = process.env.REACT_APP_API_URL;
@@ -16,8 +16,7 @@ export default function Index() {
 
   return (
     <div>
-      <Carousel flowerList={flowerList}/>
-      <h1>Index Page</h1>
+      <CarouselComp flowerList={flowerList}/>
     </div>
   );
 }

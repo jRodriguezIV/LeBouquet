@@ -3,3 +3,12 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+}

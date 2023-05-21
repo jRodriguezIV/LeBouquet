@@ -1,0 +1,28 @@
+
+.carouselContainer {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.carousel {
+    display: inline-block;
+    text-align: left;
+}
+
+.carousel img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:1000px){
+    .carousel img {
+        height: 500px;
+    }
+}
+
+/* @media screen and (max-width: 1000px) {
+    .carousel img {
+      height: 150px;
+      width: 225px;
+    } */
