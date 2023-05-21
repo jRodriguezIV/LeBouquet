@@ -1,0 +1,16 @@
+
+.carouselContainer {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.carousel {
+    display: inline-block;
+    text-align: left;
+}
+
+.carousel img {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+}
