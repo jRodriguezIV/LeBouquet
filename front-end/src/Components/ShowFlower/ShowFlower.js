@@ -10,12 +10,12 @@ export default function ShowFlower({ flower }) {
 
       <div className="flowerInfo">
         <p>
-          <span className="spanLeft">Flower Name:</span>
+          Flower Name:&nbsp;
           <span className="spanRight">{flower.name}</span>
         </p>
         <p>
           Flower Cost:&nbsp;
-          <span className="spanRight">{`$${flower.cost}`}&nbsp;(each)</span>
+          <span className="spanRight">{`$${flower.cost}`}(each)</span>
         </p>
         <p>
           Scientific Name:&nbsp;

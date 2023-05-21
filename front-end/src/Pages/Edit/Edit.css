@@ -1,0 +1,21 @@
+.editContainer {
+text-align: center;
+}
+
+.editImage {
+
+    margin-top: 2.5%;
+    display: inline-block;
+    border-radius: 5%;
+    max-width: 50%;
+}
+
+.editFormInfo {
+    font-family: Andale Mono, monospace;
+    background-color: #BBD1E1;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2.5%;
+    padding: .5%;
+    border-radius: 15px 15px 15px 15px;
+}
