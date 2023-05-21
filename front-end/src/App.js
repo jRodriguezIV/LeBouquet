@@ -4,6 +4,7 @@ import Home from "./Pages/Home/Home";
 import NavBar from "./Components/NavBar/NavBar";
 import Error from "./Pages/Error/Error";
 import Index from "./Pages/Index/Index";
+import Show from "./Pages/Show/Show";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/flowers" element={<Index />} />
+          <Route path="/flowers/:id"  element={<Show />}/>
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>

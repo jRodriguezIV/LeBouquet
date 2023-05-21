@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import CarouselComp from "../../Components/NavBar/Carousel/CarouselComp";
+import CarouselComp from "../../Components/Carousel/CarouselComp";
 import axios from "axios";
 
 const API = process.env.REACT_APP_API_URL;
