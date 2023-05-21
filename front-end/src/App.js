@@ -6,6 +6,7 @@ import Error from "./Pages/Error/Error";
 import Index from "./Pages/Index/Index";
 import Show from "./Pages/Show/Show";
 import Edit from "./Pages/Edit/Edit";
+import New from "./Pages/New/New";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/flowers" element={<Index />} />
           <Route path="/flowers/:id"  element={<Show />}/>
           <Route path="/flowers/:id/edit" element={<Edit />} />
+          <Route path="/flowers/new" element={<New />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>
