@@ -1,6 +1,7 @@
 .navBar {
     padding: 15px;
     background-color: #88bb90;
+    box-shadow: 5px 10px 10px  rgba(0, 0, 0, .75);
 }
 
 .navBarText p {
