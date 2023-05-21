@@ -4,6 +4,7 @@ const {
   getFlower,
   createFlower,
   deleteFlower,
+  updateFlower,
 } = require("../queries/flowers");
 const { checkName, checkBoolean } = require("../validations/checkFlowers");
 const flowers = express.Router();
@@ -44,6 +45,12 @@ flowers.delete("/:id", async (req, res) => {
   } else {
     res.status(404).send("Flower not found");
   }
+});
+
+flowers.put("/:id", checkName, checkBoolean, async (req, res) => {
+  const { id } = req.params;
+  const updatedFlower = await updateFlower(id, req.body);
+  res.status(200).json(updatedFlower);
 });
 
 module.exports = flowers;

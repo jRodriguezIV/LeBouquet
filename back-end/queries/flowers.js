@@ -51,9 +51,32 @@ const deleteFlower = async (id) => {
   }
 };
 
+const updateFlower = async (id, flower) => {
+  try {
+    const updatedFlower = await db.one(
+      "UPDATE flowers SET name=$1, scientific_name=$2, cost=$3, color=$4, watering=$5, sunlight=$6, image=$7, is_favorite=$8 WHERE id=$9 RETURNING * ",
+      [
+        flower.name,
+        flower.scientific_name,
+        flower.cost,
+        flower.color,
+        flower.watering,
+        flower.sunlight,
+        flower.image,
+        flower.is_favorite,
+        id,
+      ]
+    );
+    return updatedFlower
+  } catch (error) {
+    return error;
+  }
+};
+
 module.exports = {
   getAllFlowers,
   getFlower,
   createFlower,
   deleteFlower,
+  updateFlower,
 };
