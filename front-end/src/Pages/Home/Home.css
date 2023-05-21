@@ -1,0 +1,32 @@
+.home {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/473/255/582/cityscape-architecture-town-square-europe-wallpaper-preview.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.button {
+
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+  button {
+    font-size: 50px;
+    background-color: #A8B9B6;
+    color: #E1CBD6;
+    font-family: "Dancing Script", cursive;
+    border: none;
+    border-radius: 10%;
+}
+
+button:hover {
+    background-color: #E1CBD6;
+    color: #A8B9B6;
+    transform: scale(1.25);
+    cursor: pointer;
+}
