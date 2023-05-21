@@ -30,8 +30,18 @@ const createFlower = async (flower) => {
   }
 };
 
+const deleteFlower = async (id) => {
+    try {
+        const deletedFlower = await db.one( "DELETE FROM flowers WHERE id=$1 RETURNING *", id)
+        return deletedFlower;
+    } catch (error) {
+        return error
+    }
+}
+
 module.exports = {
   getAllFlowers,
   getFlower,
-  createFlower
+  createFlower,
+  deleteFlower
 };
