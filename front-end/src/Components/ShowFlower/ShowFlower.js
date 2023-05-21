@@ -1,11 +1,21 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./ShowFlower.css";
+import axios from "axios";
+
+const API = process.env.REACT_APP_API_URL
 
 export default function ShowFlower({ flower }) {
-  console.log(flower);
+    const { id } = useParams()
+
+    const handleDelete = () => {
+        axios
+        .delete(`${API}/flowers/${id}`)
+        .catch(e => console.warn("catch", e))
+    }
 
   return (
-    <div key={flower.id} className="showFlowerContainer">
+      <div key={flower.id} className="showFlowerContainer">
+        <a href="/flowers">{``}</a>
       <img className="flowerImage" src={flower.image} alt={flower.name} />
 
       <div className="flowerInfo">
@@ -39,10 +49,22 @@ export default function ShowFlower({ flower }) {
           Favorite Flower?&nbsp;
           <span className="spanRight">{flower.is_favorite ? "⭐️" : "❌"}</span>
         </p>
+        <Link to={`/flowers`}>
+        <button style={{marginRight:"15%"}} className="editButton"> 
+            {`<< Gallery`}
+        </button>
+        </Link>
+
+        
+
         <Link to={`/flowers/${flower.id}/edit`}>
-        <button className="editButton"> 
+        <button style={{marginRight:"15%"}} className="editButton"> 
             Edit Flower
         </button>
+
+        </Link>
+        <Link to={`/flowers`}>
+            <button onClickCapture={() => handleDelete()} className="editButton">{"Delete 😢"}</button>
         </Link>
 
       </div>

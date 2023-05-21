@@ -9,7 +9,8 @@ export default function NavBar() {
     return (
       <div className="navBar">
         <div className="navBarText">
-            <p className="" onClick={() => navigate("/") }> <strong>Le Bouquet 🌸</strong></p>
+            <p className="icon" onClick={() => navigate("/") }> <strong>Le Bouquet 🌸</strong></p>
+            <p className="new" onClick={() => navigate(`/new`)} >New Flower</p>
         </div>
       </div>
     );

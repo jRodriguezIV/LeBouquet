@@ -7,11 +7,25 @@
     font-family: "Snell Roundhand", cursive;
     margin: 0px;
     color: #E1CBD6;
-    font-size: x-large;
 
     text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.5),
                2px -2px 4px rgba(255, 255, 255, 0.5);
 
+}
+
+.navBarText {
+    display: flex;
+    justify-content: space-between  ;
+}
+
+.new {
+    padding-right: 5%;
+    font-size: large;
+    padding-top:.25%
+}
+
+.icon {
+    font-size: x-large;
 }
 
 .navBarText p:hover {
@@ -20,3 +34,4 @@
     text-shadow: -2px 2px 1px rgba(255, 255, 255, 0.5),
                2px -2px 4px rgba(255, 255, 255, 0.5);
 }
+
