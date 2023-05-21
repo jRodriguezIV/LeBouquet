@@ -7,7 +7,7 @@ import Index from "./Pages/Index/Index";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Router>
         <NavBar />
         <Routes>

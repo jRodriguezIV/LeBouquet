@@ -1,0 +1,22 @@
+.navBar {
+    padding: 15px;
+    background-color: #88bb90;
+}
+
+.navBarText p {
+    font-family: "Snell Roundhand", cursive;
+    margin: 0px;
+    color: #E1CBD6;
+    font-size: x-large;
+
+    text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.5),
+               2px -2px 4px rgba(255, 255, 255, 0.5);
+
+}
+
+.navBarText p:hover {
+    cursor: pointer;
+
+    text-shadow: -2px 2px 1px rgba(255, 255, 255, 0.5),
+               2px -2px 4px rgba(255, 255, 255, 0.5);
+}
