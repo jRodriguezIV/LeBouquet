@@ -69,7 +69,7 @@ export default function FlowerNewform() {
               Flower Cost($):
               &nbsp;<input
                 id="cost"
-                type="text"
+                type="number"
                 placeholder="`$00`  no decimal" 
                 value={flower.cost}
                 onChange={handleTextChange}

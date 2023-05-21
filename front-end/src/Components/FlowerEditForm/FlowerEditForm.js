@@ -71,7 +71,7 @@ export default function FlowerEditForm() {
               Flower Cost($):
               &nbsp;<input
                 id="cost"
-                type="text"
+                type="number"
                 value={flower.cost}
                 onChange={handleTextChange}
               />
