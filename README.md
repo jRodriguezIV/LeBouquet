@@ -5,7 +5,7 @@
 
 | Deployed Links |
 | :--------------:
-| [**Front-End**](https://lebouquet.onrender.com/flowers)|
+| [**Front-End**](https://lebouquet.netlify.app/)|
 | [**Back-End**](https://lebouquet.onrender.com/flowers)|
 
 Welcome to Le Bouqet!  
