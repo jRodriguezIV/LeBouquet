@@ -1,4 +1,12 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f4a816e5-e549-4b90-82f9-1d01cbeaeff1/deploy-status)](https://app.netlify.com/sites/lebouquet/deploys)
+
 # LeBouquet
+
+
+| Deployed Links |
+| :--------------:
+| [**Front-End**](https://lebouquet.onrender.com/flowers)|
+| [**Back-End**](https://lebouquet.onrender.com/flowers)|
 
 Welcome to Le Bouqet! 🌸 
 
