@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f4a816e5-e549-4b90-82f9-1d01cbeaeff1/deploy-status)](https://app.netlify.com/sites/lebouquet/deploys)
 
-# LeBouquet
+# LeBouquet 🌸
 
 
 | Deployed Links |
@@ -8,7 +8,7 @@
 | [**Front-End**](https://lebouquet.onrender.com/flowers)|
 | [**Back-End**](https://lebouquet.onrender.com/flowers)|
 
-Welcome to Le Bouqet! 🌸 
+Welcome to Le Bouqet!  
 
 This React.js front-end application utilizes an Express.js back-end with SQL to retrieve and display information 
 about a selection of some of the flowers that Le Bouquet has in stock. The application makes API calls to the back-end to 
