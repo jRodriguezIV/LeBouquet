@@ -5,8 +5,8 @@
 
 | Deployed Links |
 | :--------------:
-| [**Front-End**](https://lebouquet.netlify.app/)|
-| [**Back-End**](https://lebouquet.onrender.com/flowers)|
+| [**Front-End**](https://jr-budget-app.netlify.app/)|
+| [**Back-End**](https://transactions-prod.onrender.com/transactions))|
 
 Welcome to Le Bouqet!  
 
